@@ -1,0 +1,198 @@
+/* Banner */
+.banner-img {
+  margin-top: 60px;
+}
+
+/* Home Page */
+.home-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards */
+  gap: 20px; /* Add some spacing between cards */
+  margin-left: 220px; /* Adjust based on filter width */
+}
+
+.home-page .card {
+  background-color: #f5f5f5; /* Light grey */
+  width: calc(33.33% - 20px); /* Adjust card width */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease;
+}
+
+.home-page .card:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.home-page .card-name-price {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home-page .card-name-price h5 {
+  margin: 0;
+  font-size: 16px;
+  color: #333; /* Dark grey */
+}
+
+.home-page .card-price {
+  color: #4caf50; /* Green */
+  font-weight: bold;
+}
+
+.home-page button {
+  border: none;
+  border-radius: 5px;
+  background-color: #faaca8; /* Blue */
+  color: #0b0b0b; /* White */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.home-page button:hover {
+  background-color: #f1b2ac; /* Darker blue on hover */
+}
+
+.home-page .card-text {
+  color: #666; /* Dark grey */
+}
+
+.home-page .card-img-top {
+  height: 200px; /* Adjust image height as needed */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Filters */
+.filters {
+  position: fixed;
+  top: 100px; /* Adjust as needed */
+  left: 0;
+  width: 200px; /* Adjust width as needed */
+  padding: 20px;
+  background-color: #fff; /* White */
+  border-right: 1px solid #ccc; /* Light grey */
+  overflow-y: auto; /* Enable vertical scrolling for filters */
+}
+
+.filters h4 {
+  color: #333; /* Dark grey */
+  border-bottom: 1px solid #ccc; /* Light grey */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Display filter options horizontally */
+.filters .ant-checkbox-group,
+.filters .ant-radio-group,
+.filters .category-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Adjust spacing between filter options */
+.filters .ant-checkbox-wrapper,
+.filters .ant-radio-wrapper,
+.filters .category-option {
+  margin: 5px;
+}
+
+.filters button {
+  background-color: #000; /* Black */
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: #fff; /* White */
+  font-weight: bold;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.filters button:hover {
+  background-color: #222; /* Darker black on hover */
+}
+
+/* Load More Button */
+.loadmore {
+  color: #4caf50; /* Green */
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+/* Filters */
+.filters {
+  position: fixed;
+  top: 100px; /* Adjust as needed */
+  left: 0;
+  width: 200px; /* Adjust width as needed */
+  padding: 20px;
+  background-color: #fff; /* White */
+  border-right: 1px solid #ccc; /* Light grey */
+  overflow-y: auto; /* Enable vertical scrolling for filters */
+  max-height: calc(100vh - 100px); /* Limit the max height to prevent overflow */
+}
+
+.filters h4 {
+  color: #333; /* Dark grey */
+  border-bottom: 1px solid #ccc; /* Light grey */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Display filter options horizontally */
+.filters .ant-checkbox-group,
+.filters .ant-radio-group,
+.filters .category-options {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Adjust spacing between filter options */
+.filters .ant-checkbox-wrapper,
+.filters .ant-radio-wrapper,
+.filters .category-option {
+  margin: 5px;
+}
+
+.filters button {
+  background-color: #000; /* Black */
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  color: #fff; /* White */
+  font-weight: bold;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.filters button:hover {
+  background-color: #222; /* Darker black on hover */
+}
+
+/* Load More Button */
+.loadmore {
+  color: #4caf50; /* Green */
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Adjust position of content to accommodate fixed filters */
+.home-page {
+  margin-left: 220px; /* Adjust based on filter width */
+}
+
+

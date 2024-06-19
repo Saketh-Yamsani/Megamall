@@ -1,0 +1,71 @@
+/* New webpage colors */
+body {
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Updated form container styles */
+.form-container {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  flex-direction: column;
+  background-color: #e0f899;
+}
+
+/* Updated form styles */
+.form-container form {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+  padding: 20px;
+  background-color: #f3f4e2;
+  border-radius: 50px; /* Rounded corners */
+}
+
+/* Updated form title styles */
+.form-container form .title {
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-family: "Arial", sans-serif;
+}
+
+/* Updated input field styles */
+.form-container form input {
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+/* Updated button styles */
+.form-container form button {
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  background-color: #b1d7ff; /* Blue color */
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Updated button hover styles */
+.form-container form button:hover {
+  background-color: #aacef5; /* Darker blue on hover */
+}
+
+/* Updated forgot password button styles */
+.forgot-btn {
+  background-color: transparent;
+  border: none;
+  color: #b1d0f1;
+  cursor: pointer;
+}
+
+/* Updated forgot password button hover styles */
+.forgot-btn:hover {
+  color: #b1d2f4; /* Darker blue on hover */
+}

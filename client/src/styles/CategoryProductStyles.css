@@ -1,0 +1,64 @@
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 80px;
+}
+
+.category .card {
+  background-color: #e5e5e5; /* Pastel grey */
+  width: 45%; /* Adjust as needed */
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.3s ease;
+}
+
+.category .card:hover {
+  transform: scale(1.03); /* Scale up on hover */
+}
+
+.category .card-name-price {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category .card-name-price h5 {
+  margin: 0;
+  font-size: 18px;
+  color: #333; /* Dark grey */
+}
+
+.category .card-price {
+  color: #4caf50; /* Green */
+  font-weight: bold;
+}
+
+.category button {
+  border: none;
+  border-radius: 5px;
+  background-color: #bdd8f5; /* Blue */
+  color: #000000; /* White */
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category button:hover {
+  background-color: #c8e1fc; /* Darker blue on hover */
+}
+
+.category .card-text {
+  color: #080808; /* Dark grey */
+}
+
+.category .card-img-top {
+  height: 200px; /* Adjust image height as needed */
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
