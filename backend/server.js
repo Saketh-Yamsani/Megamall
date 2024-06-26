@@ -15,11 +15,17 @@ dotenv.config()
 connectDB();
 // rest object
 const app=express();
-app.use(cors())
+app.use(cors(
+    {
+        origin:["https://ecom.vercel.app"],
+        methods:["POST","GET"],
+        credentials:true
+    }
+));
 //middleware
 app.use(express.json())
 app.use(morgan('dev'))
-
+mongoose.connect('mongodb+srv://5sakethyamsani:30082005Saketh%40@cluster0.bjcrm0e.mongodb.net/e-commerce_website?retryWrites=true&w=majority&appName=Cluster0')
 //routes
 app.use('/api/v1/auth',authRoutes);
 app.use('/api/v1/category',categoryRoutes);
