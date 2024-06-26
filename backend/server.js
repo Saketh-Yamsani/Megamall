@@ -7,6 +7,7 @@ import authRoutes from './routes/authRoute.js';
 import categoryRoutes from './routes/categoryRoutes.js'
 import cors from "cors";
 import productRoutes from './routes/productRoutes.js'
+import mongoose from "mongoose";
 
 // configure env
 dotenv.config()
@@ -14,8 +15,8 @@ dotenv.config()
 connectDB();
 // rest object
 const app=express();
-//middleware
 app.use(cors())
+//middleware
 app.use(express.json())
 app.use(morgan('dev'))
 
