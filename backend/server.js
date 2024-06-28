@@ -17,7 +17,7 @@ connectDB();
 const app=express();
 app.use(cors(
     {
-        origin:["https://ecom.vercel.app"],
+        origin:["https://megamall-sable.vercel.app/"],
         methods:["POST","GET"],
         credentials:true
     }
